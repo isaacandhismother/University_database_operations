@@ -14,7 +14,7 @@ def main():
     advisors = [(i, fake.name()) for i in range(1, 31)]
     students = [(i, fake.name(), random.randint(1, 30)) for i in range(1, 100)]
 
-    # Opening database in the memory(you can use your own if you want)
+    # Opening database in the memory(you can use your own .db file if you want)
     conn = sqlite3.connect(':memory:')
     cursor = conn.cursor()
 
